@@ -1,0 +1,47 @@
+@charset "UTF-8";
+ 
+body {
+    background-color: rgba(138, 138, 238, 0.521);        
+}
+
+h1 {
+    background-color: rgba(72, 139, 139, 0.726);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200px;
+    font-size: bold;
+    padding: 10px;
+    border-radius: 10px;   
+    height: 1em; 
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.712);
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(23, 23, 92, 0.356);
+    margin: 10px -50px 10px -50px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.651);
+    color: white;
+
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    height: 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+h2:hover {
+    color: rgb(26, 26, 117);
+    background-color: rgb(85, 85, 163);
+
+}

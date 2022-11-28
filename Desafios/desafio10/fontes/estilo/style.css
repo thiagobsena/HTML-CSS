@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format(opentype); /*não funcionou*/
+    font-weight: normal;
+
+}
+
+:root {
+    --cor01: #c5ebd6;
+    --cor02: #83e1ad;
+    --cor03: #3ddc84;
+    --cor04: #2fa866;
+    --cor05: #1a5c37;
+    --cor06: #063d1e;    
+
+    --fonte-padrao: Arial;
+    --fonte-android: 'Android, cursive';
+
+}
+
+*{ /* global, altera tudo */
+    margin: 0px;
+    padding: 0px;
+}
+
+a.externo::content {
+    content: '\00A0\1F517';
+}
+
+body{ /* ESTUDAR RESPONSIVIDADE */
+    background-color: #c5ebd6;
+    font-family: var(--fonte-padrao);
+}
+
+header{
+
+    background-image: linear-gradient(to bottom, var(--cor02), var(--cor06));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.836);
+    font-weight: bold;
+}
+
+header > p {
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Arial';
+    max-width: 500px;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    text-shadow: 3px 3px 3px black; /*sombra no testo*/
+}
+
+nav {
+    background-color: #063d1e;
+    padding: 10px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.774);
+}
+
+nav > a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition-duration: 1s; /*demora quando passa o mouse em cima*/
+}
+
+nav > a:hover { /* Muda a cor passando o mouse em cima*/
+    background-color: #83e1ad;
+    color: #063d1e;
+
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 1200px;
+    min-width: 400px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.842);
+    border-bottom-left-radius: 15px; /* arredonda somente a parte de baixo*/
+    border-bottom-right-radius: 15px; /* arredonda somente a parte de baixo*/
+}
+
+div.video { /*centralizandp video no meio da página */
+    background-color: #063d1e;
+    margin: 30px -20px;
+    padding: 20px;
+    padding-bottom: 40%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+
+}
+
+main p {
+    margin: 15px 0px 15px 0px; /* Espaço em cima e embaixo das linhas*/
+    text-align: justify;
+    text-indent: 30px; /*Parágrafo na primeiraa linha*/
+    line-height: 2em; /*altura entre linhas*/
+    font-size: 1em; /*tamanho da letra*/ 
+}
+
+main strong {
+    color: #063d1e;
+    font-size: bold;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #063d1e;
+    background-color: #83e1ad;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: #2fa866;
+    border-radius: 10px;
+}
+
+main h1 {
+    color: #063d1e;
+    font-family: var(--fonte-android);
+    font-weight: bold;
+    font-size: 2em;
+}
+
+main h2 {
+    color: #063d1e;        
+    font-family: var(--fonte-android); /* trocar fonte */
+    font-size: 1.8em;
+    background-image: linear-gradient(to right, var(--cor02), transparent); /*Faz uma linha degrade*/
+    text-indent: 10px; /*paragrafo mais afastado da margem*/
+} 
+
+aside {
+    background-color: #83e1ad;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.562);
+    margin-top: 30px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0'; /*troca o simbolo em frente da lista / 00A0 da um espaço do simbolo com a palavra*/
+    list-style-position: inside; /*coloca a lista pra dentro */
+    columns: 2; /*divide em colunas*/
+}
+
+aside > h3 {
+    background-color: #1a5c37;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1.5em;
+}
+
+
+footer {
+    background-color: #063d1e;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    text-decoration: none; /*tirando decorações das palavras, ex: sublinhado*/
+    color: #3ddc84;
+    font-size: bolder;
+}
+
+footer a:hover { /* criando movimento :hover */
+    text-decoration: underline; /*sublinhando palavra*/
+    color: blue;
+}
+
