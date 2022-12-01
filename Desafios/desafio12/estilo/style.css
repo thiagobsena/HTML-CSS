@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/* :root {
+    Trocar fontes
+
+} */
+
 * {
     margin: 0px;
     padding: 0px;
@@ -41,6 +46,7 @@ section {
     padding-bottom: 10vh;
     line-height: 2em; /*aumenta o espaço entre as linhas */
     padding-left: 30px;
+    font-size: 3.5vw;
 
 }
 
@@ -50,6 +56,8 @@ section.normal {
 }
 
 section.imagem {
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.644);
     color: white;
 }
